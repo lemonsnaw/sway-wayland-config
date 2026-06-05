@@ -1,0 +1,1 @@
+personaly sway stow configs
