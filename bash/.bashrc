@@ -23,7 +23,7 @@ if [ -d ~/.bashrc.d ]; then
     done
 fi
 unset rc
-
+export "QT_QPA_PLATFORMTHEME"="qt6ct"
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 eval "$(starship init bash)"
 . "$HOME/.cargo/env"

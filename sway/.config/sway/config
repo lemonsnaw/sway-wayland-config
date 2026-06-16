@@ -272,4 +272,6 @@ for_window [app_id="Pavucontrol"] move to workspace 9
 for_window [app_id="librewolf"] move to workspace 4
 output * bg #000000 solid_color
 include /etc/sway/config.d/*
+exec mako
 exec copyq --start-server
+exec lxpolkit
