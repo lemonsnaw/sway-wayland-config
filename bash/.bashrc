@@ -10,7 +10,7 @@ if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]; then
     PATH="$HOME/.local/bin:$HOME/bin:$PATH"
 fi
 export PATH
-
+export FZF_DEFAULT_OPTS="--style full"
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
 # export SYSTEMD_PAGER=
 
@@ -27,3 +27,7 @@ export "QT_QPA_PLATFORMTHEME"="qt6ct"
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 eval "$(starship init bash)"
 . "$HOME/.cargo/env"
+
+export FZF_ALT_C_OPTS="
+  --walker dir,follow,hidden
+  --preview 'tree -C {}'"
